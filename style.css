@@ -1,0 +1,436 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* LOGIN E CADASTRO */
+
+.login-body{
+    background:linear-gradient(to right,#0f172a,#1e293b);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:900px;
+    height:500px;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    display:flex;
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+.left{
+    width:50%;
+    background:linear-gradient(to bottom,#2563eb,#1d4ed8);
+    color:white;
+    padding:50px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.left h1{
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.left p{
+    font-size:18px;
+    line-height:30px;
+}
+
+.right{
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+form{
+    width:80%;
+}
+
+form h2{
+    margin-bottom:30px;
+    color:#1e293b;
+}
+
+form input{
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:none;
+    background:#f1f5f9;
+    border-radius:10px;
+    font-size:16px;
+}
+
+form button{
+    width:100%;
+    padding:15px;
+    border:none;
+    background:#2563eb;
+    color:white;
+    font-size:16px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+form button:hover{
+    background:#1d4ed8;
+}
+
+form p{
+    margin-top:20px;
+}
+
+form a{
+    color:#2563eb;
+    text-decoration:none;
+}
+
+/* SITE */
+
+header{
+    background:#0f172a;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    margin-left:20px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#60a5fa;
+}
+
+.banner{
+    height:400px;
+    background:url('https://images.unsplash.com/photo-1507692049790-de58290a4334?q=80&w=1400&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+}
+
+.overlay{
+    background:rgba(0,0,0,0.6);
+    height:100%;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.overlay h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.overlay p{
+    font-size:20px;
+    max-width:700px;
+}
+
+.noticias{
+    padding:50px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h2{
+    padding:20px;
+    color:#0f172a;
+}
+
+.card p{
+    padding:0 20px 20px;
+    color:#555;
+    line-height:25px;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+    .container{
+        width:95%;
+        flex-direction:column;
+        height:auto;
+    }
+
+    .left,
+    .right{
+        width:100%;
+    }
+
+    .left{
+        padding:30px;
+    }
+
+    header{
+        flex-direction:column;
+    }
+
+    nav{
+        margin-top:20px;
+    }
+
+    .overlay h1{
+        font-size:35px;
+    }
+
+}
+/* HOME */
+
+.home-body{
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1519491050282-cf00c82424b4?q=80&w=1400&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+}
+
+.home-overlay{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.home-box{
+    text-align:center;
+    color:white;
+    max-width:700px;
+    padding:40px;
+}
+
+.home-box h1{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+.home-box p{
+    font-size:22px;
+    line-height:35px;
+    margin-bottom:40px;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    background:#2563eb;
+    color:white;
+    padding:15px 35px;
+    border-radius:12px;
+    text-decoration:none;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+    transform:scale(1.05);
+}
+
+.btn-secondary{
+    background:white;
+    color:#111827;
+}
+
+.btn-secondary:hover{
+    background:#e5e7eb;
+}
+
+.links{
+    margin-top:20px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.links a{
+    text-decoration:none;
+    color:#2563eb;
+    font-size:14px;
+}
+/* PAGINAS */
+
+.page-banner{
+    background:linear-gradient(to right,#0f172a,#1e3a8a);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.page-banner h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.page-banner p{
+    font-size:20px;
+}
+
+/* LOUVORES */
+
+.louvores-container{
+    padding:50px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.louvor-card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.louvor-card:hover{
+    transform:translateY(-10px);
+}
+
+.louvor-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.louvor-card h2{
+    padding:20px 20px 10px;
+}
+
+.louvor-card p{
+    padding:0 20px 20px;
+    color:#555;
+}
+
+.louvor-card a{
+    display:block;
+    margin:20px;
+    background:#2563eb;
+    color:white;
+    text-align:center;
+    padding:15px;
+    border-radius:10px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.louvor-card a:hover{
+    background:#1d4ed8;
+}
+
+/* MISSOES */
+
+.missoes-box{
+    display:flex;
+    justify-content:center;
+    padding:60px 20px;
+}
+
+.missoes-form{
+    width:100%;
+    max-width:600px;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.missoes-form h2{
+    margin-bottom:30px;
+    color:#0f172a;
+}
+
+.missoes-form input,
+.missoes-form select,
+.missoes-form textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:none;
+    background:#f1f5f9;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.missoes-form textarea{
+    height:150px;
+    resize:none;
+}
+
+.missoes-form button{
+    width:100%;
+    padding:15px;
+    border:none;
+    background:#2563eb;
+    color:white;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.missoes-form button:hover{
+    background:#1d4ed8;
+}
