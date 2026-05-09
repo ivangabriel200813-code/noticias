@@ -84,3 +84,67 @@ if(recuperarForm){
     });
 
 }
+// VERSICULOS AUTOMATICOS
+
+const versiculos = [
+
+    {
+        texto: "Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito.",
+        referencia: "João 3:16"
+    },
+
+    {
+        texto: "O Senhor é o meu pastor e nada me faltará.",
+        referencia: "Salmos 23:1"
+    },
+
+    {
+        texto: "Tudo posso naquele que me fortalece.",
+        referencia: "Filipenses 4:13"
+    },
+
+    {
+        texto: "Entrega o teu caminho ao Senhor; confia nele.",
+        referencia: "Salmos 37:5"
+    },
+
+    {
+        texto: "Não temas, porque eu sou contigo.",
+        referencia: "Isaías 41:10"
+    }
+
+];
+
+// PEGA O DIA ATUAL
+
+const hoje = new Date().getDate();
+
+// ESCOLHE O VERSICULO PELO DIA
+
+const versiculoAtual = versiculos[hoje % versiculos.length];
+
+// MOSTRA NA TELA
+
+const texto = document.getElementById("versiculoTexto");
+const referencia = document.getElementById("versiculoReferencia");
+
+if(texto && referencia){
+
+    texto.innerText = `"${versiculoAtual.texto}"`;
+
+    referencia.innerText = versiculoAtual.referencia;
+
+}
+// MODO ESCURO
+
+const darkBtn = document.getElementById("darkModeBtn");
+
+if(darkBtn){
+
+    darkBtn.addEventListener("click", () => {
+
+        document.body.classList.toggle("dark-mode");
+
+    });
+
+}

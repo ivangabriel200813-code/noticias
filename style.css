@@ -434,3 +434,69 @@ footer{
 .missoes-form button:hover{
     background:#1d4ed8;
 }
+/* VERSICULO */
+
+.versiculo{
+    background:white;
+    margin:50px;
+    padding:50px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.versiculo h2{
+    color:#2563eb;
+    margin-bottom:25px;
+    font-size:35px;
+}
+
+.versiculo p{
+    font-size:24px;
+    line-height:40px;
+    color:#333;
+    margin-bottom:20px;
+}
+
+.versiculo span{
+    color:#666;
+    font-size:18px;
+}
+/* BOTAO */
+
+#darkModeBtn{
+    padding:10px 15px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+    background:white;
+}
+
+/* MODO ESCURO */
+
+.dark-mode{
+    background:#0f172a;
+    color:white;
+}
+
+.dark-mode header{
+    background:#020617;
+}
+
+.dark-mode .card{
+    background:#1e293b;
+    color:white;
+}
+
+.dark-mode .card p{
+    color:#cbd5e1;
+}
+
+.dark-mode .versiculo{
+    background:#1e293b;
+}
+
+.dark-mode footer{
+    background:#020617;
+}
